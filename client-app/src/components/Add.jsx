@@ -13,7 +13,7 @@ export default function Add(){
         e.preventDefault();
         try
         {
-           const response = await axios.post('http://localhost:3001/api/employees',
+           const response = await axios.post('https://myproject-er57.onrender.com/api/employees',
             {empNo,empName,empSal});
             //alert(JSON.stringify(response.data,null,2));
             alert(response.data.message);
