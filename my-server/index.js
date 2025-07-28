@@ -3,7 +3,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const app = express();
-
+const port ='https://frontend-h43c.onrender.com';
 //Middleware to parse JSON bodies
 app.use(express.json());
 app.use(cors());
@@ -125,6 +125,6 @@ app.delete('/api/employees/:id', async (req, res) => {
 });
 
 
-app.listen(3001,()=>{
+app.listen(port,()=>{
     console.log('🚀Server running on http://localhost:3001');
 });
