@@ -10,7 +10,7 @@ export function Delete(){
         e.preventDefault();
         try
         {
-const response = await axios.delete(`http://localhost:3001/api/employees/${id}`);
+const response = await axios.delete(`https://myproject-er57.onrender.com/api/employees/${id}`);
 alert(response.data.message);
         }
         catch(err)
