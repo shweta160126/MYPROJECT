@@ -11,7 +11,7 @@ function Update1 (){
   async function updateHandler(e) {
     e.preventDefault();
     try {
-      const response = await axios.put(`http://localhost:3001/api/employees/${id}`, {
+      const response = await axios.put(`https://myproject-er57.onrender.com/api/employees/${id}`, {
         empNo: Number(empNo),
         empName,
         empSal: Number(empSal),
